@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --nodes=1                        # number of nodes
 #SBATCH --ntasks-per-node=1              # number of tasks per node
-#SBATCH --cpus-per-task=1                # number of CPU cores per task
+#SBATCH --cpus-per-task=2                # number of CPU cores per task
 #SBATCH --time=10:00:00                  # max wall time (10 hours)
 #SBATCH --mem=16GB                       # memory per node
 #SBATCH --gres=gpu:1                     # request 1 GPU
