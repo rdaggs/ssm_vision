@@ -88,8 +88,8 @@ if __name__ == "__main__":
     train_dataset = CIFAR10(root='./data', train=True, transform=transform, download=True)
     test_dataset = CIFAR10(root='./data', train=False, transform=transform, download=True)
 
-    train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True, num_workers=4)
-    test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False, num_workers=4)
+    train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True, num_workers=2)
+    test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False, num_workers=2)
 
     from vim import Vim
     model = Vim(
