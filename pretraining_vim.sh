@@ -12,7 +12,7 @@
 module purge
 module load python/3.8.6
 
-source /scratch/rpd4362/env39/bin/activate    # Replace with your virtual environment path
+source /scratch/rpd4362/env39/bin/activate
 
 pip install torch torchvision torchinfo zetascale swarms einops
 
