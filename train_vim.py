@@ -102,7 +102,7 @@ if __name__ == "__main__":
         patch_size=16,
         channels=3,
         dropout=0.1,
-        depth=4,
+        depth=6,
     )
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
