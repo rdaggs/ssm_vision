@@ -38,16 +38,12 @@ def train_model(model,train_loader,criterion,optimizer,num_epochs,device,exp):
         epoch_loss = running_loss / len(train_loader)
         epoch_time = time.time() - start_time  # Calculate epoch duration
         print(f"Epoch [{e + 1}/{num_epochs}], Loss: {epoch_loss:.4f}, Time: {epoch_time:.2f}s")
+        if (epoch + 1) % 3 == 0:
+            checkpoint_path = save_path.replace(".pth", f"_epoch_{epoch + 1}.pth")
+            print(f"Saving model checkpoint to {checkpoint_path}")
+            torch.save(model.state_dict(), checkpoint_path)
 
         # save model
-
-    checkpoint = {'model_state_dict': model.state_dict(),
-                  'optimizer_state_dict': optimizer.state_dict(),
-                  'epoch': e,
-                  'loss': running_loss,
-                 }
-
-    torch.save(checkpoint, f'vim_checkpoint_{num_epochs}.pth')
 
 
 def evaluate_model(model,test_loader,device):
