@@ -13,4 +13,4 @@ module purge
 module load python/3.11.7
 conda activate /scratch/rpd4362/env39
 pip install torch torchvision torchinfo zetascale swarms einops
-python train_vim.py
+python -u train_vim.py
