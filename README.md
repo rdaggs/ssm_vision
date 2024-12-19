@@ -1,5 +1,5 @@
 # Improving State Space Models for Computer Vision
-> CSCI-GA.2271-001 (Advanced) Computer Vision
+> CSCI-GA.2271-001 (Advanced) Computer Vision - Fall 2024
 
 This project explores techniques with the potential of improving state-space models (SSMs) for computer vision tasks, focusing on lightweight architectures and efficient training methods. Our work builds upon prior research, including the original **Vision Mamba (Vim)** [[1](https://arxiv.org/abs/2401.09417)] and **MambaVision** [[2](https://arxiv.org/abs/2407.08083)], and extends these architectures with optimization techniques and experiments involving novel integrations such as Squeeze-and-Excitation (SE) blocks, Early-Bird Lottery Ticket Hypothesis, Sliding Window Attention (SWA), and more!
 
