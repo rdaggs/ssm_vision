@@ -26,9 +26,9 @@ The experiments conducted in this project are organized into two categories, cor
 - **Squeeze-and-Excitation (SE) Integration** [[3](https://arxiv.org/abs/1709.01507)]: Evaluated SE block integration to recalibrate features, achieving variable results.
 - **MobileNetV2-Inspired Depthwise Convolutions** [[4](https://arxiv.org/abs/1801.04381)]: Reduces computational overhead with slight accuracy variation.
 - **Dynamic Pruning with Cosine Scheduler**: Improved sparsity efficiency while maintaining high accuracy, achieving a best accuracy of 70%.
-- **Iterative Magnitude Pruning** [[5]()]: Repeatedly pruned low-magnitude weights to identify sparse, efficient subnetworks while retaining performance.
-- **Gradient Pruning** [[6]()]: Pruned weights based on gradient magnitudes during training, allowing for adaptive sparsity that targets the most insignificant weights while maintaining performance.
-- **Early-Bird Lottery Ticket Hypothesis** [[7]()]: Identified sparse subnetworks within the first 6 epochs by stabilizing mask distances, enabling early optimization.
+- **Iterative Magnitude Pruning** [[5](https://arxiv.org/abs/2210.03044)]: Repeatedly pruned low-magnitude weights to identify sparse, efficient subnetworks while retaining performance.
+- **Early-Bird Lottery Ticket Hypothesis** [[6](https://arxiv.org/abs/1909.11957)]: Identified sparse subnetworks within the first 6 epochs by stabilizing mask distances, enabling early optimization.
+- **Gradient Pruning**: Pruned weights based on gradient magnitudes during training, allowing for adaptive sparsity that targets the most insignificant weights while maintaining performance.
 
 
 ### With MambaVision:
@@ -50,6 +50,11 @@ networks,” 2019. [Online]. Available: https://arxiv.org/abs/1709.01507
 4. M. Sandler, A. Howard, M. Zhu, A. Zhmoginov, and L.-C. Chen,
 “Mobilenetv2: Inverted residuals and linear bottlenecks,” 2019. [Online].
 Available: https://arxiv.org/abs/1801.04381
-5.
-6.
-7.
+5. M. Paul, F. Chen, B. W. Larsen, J. Frankle, S. Ganguli, and
+G. K. Dziugaite, “Unmasking the lottery ticket hypothesis: What’s
+encoded in a winning ticket’s mask?” 2022. [Online]. Available:
+https://arxiv.org/abs/2210.03044
+6. H. You, C. Li, P. Xu, Y. Fu, Y. Wang, X. Chen, R. G. Baraniuk,
+Z. Wang, and Y. Lin, “Drawing early-bird tickets: Towards more
+efficient training of deep networks,” 2022. [Online]. Available:
+https://arxiv.org/abs/1909.11957
