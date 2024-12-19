@@ -42,4 +42,4 @@ to load the following checkpoints:
 
 - **SE_vim.pt** (Squeeze and Excitation integrated)
 - **MobileNetV2_vim.pt** (MobileNetV2 integrated)
-- **DynamicPrunning_vim** (Dynamic Prunning with Cosine Scheduler integrated)
+- **DynamicPruning_vim** (Dynamic Prunning with Cosine Scheduler integrated)
