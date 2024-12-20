@@ -1,5 +1,0 @@
-torch>=2.4.0
-timm
-tensorboardX
-einops
-transformers
