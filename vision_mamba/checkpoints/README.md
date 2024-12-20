@@ -17,9 +17,8 @@ model = Vim(dim=256,
 
 to load the following checkpoints:
 
--
--
--
+- **IMP.pt** (Iterative Magnitude Pruning)
+- **EBH.pt** (Early Bird Lottery Ticket Hypothesis)
 
 
 
