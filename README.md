@@ -34,6 +34,8 @@ The experiments conducted in this project are organized into two categories, cor
 ### With MambaVision:
 - **Sliding Window Attention (SWA)**: Investigated increased receptive fields for MambaVision on larger-scale tasks.
 - **Exploration of S4/S5 SSMs**: Tested alternative kernels (S4 and S5) for continuous signals, showing promise in handling vision tasks with continuous characteristics.
+- **Incorporating Attention-Based Pooling**: Replaced standard pooling layers with attention-based pooling. This approach emphasizes critical features while suppressing irrelevant ones.
+- **Integrating ConvNeXt Principles into MambaVision**: Reduced kernel sizes (7×7 → 3×3), adjusted strides (4 → 2). Downsampling layers were modified to 2×2 kernels with stride 2, and the number of blocks was reduced to prevent feature over-reduction. while employing depthwise separable convolutions, GeLU activations, and layer normalization for better computational efficiency and training stability.
 
 ---
 
