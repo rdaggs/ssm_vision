@@ -20,7 +20,7 @@ def output_head(dim: int, num_classes: int):
 
     Returns:
         nn.Sequential: The output head module.
-    """ 
+    """
     return nn.Sequential(
         Reduce("b s d -> b d", "mean"),
         nn.LayerNorm(dim),
