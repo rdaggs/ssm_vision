@@ -1,0 +1,6 @@
+Convnext principles changes
+- BatchNorm2d is changed to LayerNorm2d in PatchEmbed
+- MambaVision already uses GeLu
+- Mixup cutmix logic is already implemented into the model, used arguments to enable mixup cutmix
+Ran train.py with the following command:
+python train.py --dataset cifar100 --amp --workers 2 --epochs 100 --batch-size 16 --dataset-download --num-classes 100 --mixup-off-epoch 75 --mixup 0.8  --cutmix 1.0" 
