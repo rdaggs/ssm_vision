@@ -40,6 +40,7 @@ model = Vim(dim=256,
 
 to load the following checkpoints:
 
-- **IMP** (IMP_pretrained_deep_vision_mamba_IMP_5.pth) --> https://drive.google.com/file/d/1-InGBc6jzFc4Cx19KHc1YMn5JlKszHHr/view?usp=share_link
-- **EBH.pth** (Early Bird Lottery Ticket Hypothesis)   --> 
-- **base model** (deep_vim__150.pth)                   --> https://drive.google.com/file/d/1--Ckgn8JHTRg-3QpHNMTR0NBvQeMfBDw/view?usp=share_link
+- *(IMP_pretrained_deep_vision_mamba_IMP_5.pth)***     --> https://drive.google.com/file/d/1-InGBc6jzFc4Cx19KHc1YMn5JlKszHHr/view?usp=share_link
+- **(Early Bird Lottery Ticket Hypothesis)**           -->
+- **(Gradient Pruning)**                               --> (n/a)
+- **(baseline)** (deep_vim__150.pth)                   --> https://drive.google.com/file/d/1--Ckgn8JHTRg-3QpHNMTR0NBvQeMfBDw/view?usp=share_link
